@@ -1,3 +1,19 @@
+/*
+   Operations that can be performed: 
+   	1) +, -, *, /, %.
+	2) Primitive, Derivative
+	3) Inverse
+	4) Exponent
+	5) Logarithm
+	6) Square Root
+	7) Interpolation
+	8) Multipoint Evaluation
+	9) Faulhaber
+	10) Online Product
+	11) Sequence ((x + 1)*(x + 2)*...(x + n))
+	12) P(x)^k = exponent(k * logarithm(P(x)))
+*/
+
 template <typename T>
 T inverse(T a, T m) {
   T u = 0, v = 1;
