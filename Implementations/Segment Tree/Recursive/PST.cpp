@@ -17,7 +17,7 @@ struct Persistent_Segtree_Point_Updates {
 
 	void upd(int &cur, int prev, T s, T e, T idx, Z val) {
 		if(!cur) {
-            cur = SZ++;
+            		cur = SZ++;
 			tr[cur].val = tr[prev].val;
 		}
 		if(s == e) { tr[cur].val += val; return; }
@@ -41,13 +41,13 @@ struct Persistent_Segtree_Point_Updates {
 		return query(tr[cur].lc, s, m, l, r) + query(tr[cur].rc, m + 1, e, l, r);
 	}
 
-    void clear() {
-        version.clear();
-    }
+	void clear() {
+		version.clear();
+	}
 
 	void init(T _st,T _en) {
 		st = _st, en = _en, tmx = -1;
-        newTime();
+        	newTime();
 	}
 
 	void upd(T idx, Z val) {
