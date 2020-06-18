@@ -5,7 +5,7 @@ struct Gauss {
 	void init() {
 		fill(basis, basis + B, 0);
 		cnt = 0;
-    }
+    	}
 	void add(T x) {
 		for(int i = B - 1; i >= 0; i--) {
 			if((x >> i) & 1) {
