@@ -9,6 +9,11 @@ int cnt[2 * MAXLEN];
 state st[MAXLEN * 2];
 int sz, last;
 void sa_init() {
+    while(sz > 0) {
+        sz--;
+        st[sz].next.clear();
+        cnt[sz] = 0;
+    }
     st[0].len = 0;
     st[0].link = -1;
     sz++;
